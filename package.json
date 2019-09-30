@@ -1,0 +1,23 @@
+{
+  "name": "worst-ts-project-ever",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quirimmo/worst-ts-project-ever.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quirimmo/worst-ts-project-ever/issues"
+  },
+  "homepage": "https://github.com/quirimmo/worst-ts-project-ever#readme",
+  "devDependencies": {
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
