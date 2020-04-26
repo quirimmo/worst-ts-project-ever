@@ -1,21 +1,9 @@
-import { Fibonacci } from './math/fibonacci';
+import { Fibonacci } from './common/math';
 import { User } from './model/user';
+import * as userData from './data/users.json';
 
-console.log(Fibonacci.calculate(15));
+console.log('Fibonacci of 15 is %s', Fibonacci.calculate(15));
 
-const me = new User('Lukasz', 'Master', 38);
+const users: User[] = userData as User[];
 
-console.log(me);
-
-interface A{}
-
-class Teacher extends User implements A {
-  teach(): void {
-    console.log('Welcome to class! My name is ' + this.name);
-  }
-}
-
-const teacher = new Teacher('remo', 'jansen', 22);
-teacher.teach();
-
-console.log(teacher instanceof User);
+console.log('There are %s users defined with %s admin users', users.length, users.filter(p => p.isAdmin == true).length);

@@ -1,0 +1,11 @@
+[
+    {
+        "name" : "John",
+        "surname" : "Doe"
+    },
+    {
+        "name" : "Lukasz",
+        "surname" : "Grden",
+        "isAdmin" : true
+    }
+]
